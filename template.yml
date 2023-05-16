@@ -1,12 +1,12 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
-Description: AWS Serverless Spring Boot 2 API - com.sacral::SAC-6
+Description: AWS Serverless Spring Boot 2 API - com.sacral::SATPU-29
 Globals:
   Api:
     EndpointConfiguration: REGIONAL
 
 Resources:
-  Sac6Function:
+  Satpu29Function:
     Type: AWS::Serverless::Function
     Properties:
       Handler: com.sacral.StreamLambdaHandler::handleRequest
@@ -23,8 +23,8 @@ Resources:
             Method: any
 
 Outputs:
-  Sac6Api:
+  Satpu29Api:
     Description: URL for application
     Value: !Sub 'https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/ping'
     Export:
-      Name: Sac6Api
+      Name: Satpu29Api

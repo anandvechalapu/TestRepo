@@ -1,5 +1,5 @@
-# SAC-6 serverless API
-The SAC-6 project, created with [`aws-serverless-java-container`](https://github.com/awslabs/aws-serverless-java-container).
+# SATPU-29 serverless API
+The SATPU-29 project, created with [`aws-serverless-java-container`](https://github.com/awslabs/aws-serverless-java-container).
 
 The starter project defines a simple `/ping` resource that can accept `GET` requests with its tests.
 
@@ -13,10 +13,10 @@ The project folder also includes a `template.yml` file. You can use this [SAM](h
 ## Building the project
 You can use the SAM CLI to quickly build the project
 ```bash
-$ mvn archetype:generate -DartifactId=SAC-6 -DarchetypeGroupId=com.amazonaws.serverless.archetypes -DarchetypeArtifactId=aws-serverless-jersey-archetype -DarchetypeVersion=1.9.1 -DgroupId=com.sacral -Dversion=1.0-SNAPSHOT -Dinteractive=false
-$ cd SAC-6
+$ mvn archetype:generate -DartifactId=SATPU-29 -DarchetypeGroupId=com.amazonaws.serverless.archetypes -DarchetypeArtifactId=aws-serverless-jersey-archetype -DarchetypeVersion=1.9.1 -DgroupId=com.sacral -Dversion=1.0-SNAPSHOT -Dinteractive=false
+$ cd SATPU-29
 $ sam build
-Building resource 'Sac6Function'
+Building resource 'Satpu29Function'
 Running JavaGradleWorkflow:GradleBuild
 Running JavaGradleWorkflow:CopyArtifacts
 
@@ -67,7 +67,7 @@ Once the deployment is completed, the SAM CLI will print out the stack's outputs
 -------------------------------------------------------------------------------------------------------------
 OutputKey-Description                        OutputValue
 -------------------------------------------------------------------------------------------------------------
-Sac6Api - URL for application            https://xxxxxxxxxx.execute-api.us-west-2.amazonaws.com/Prod/pets
+Satpu29Api - URL for application            https://xxxxxxxxxx.execute-api.us-west-2.amazonaws.com/Prod/pets
 -------------------------------------------------------------------------------------------------------------
 ```
 
